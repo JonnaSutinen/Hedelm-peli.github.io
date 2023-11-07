@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f2f2f2; 
+    color: #ff69b4; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+.hedelmapeli-title {
+    font-size: 36px;
+    margin: 0;
+}
+
+
+
+.container {
+    background-color: #fff; 
+    max-width: auto;
+    min-width: fit-content;
+    margin: 100px auto;
+    padding: 10px;
+    display: grid;
+    gap: 15px;
+}
+
+.upper-container {
+    display: inline-flex;
+}
+
+.voittotaulu {
+    display: inline-flex;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    text-align: right;
+    font-size: 36px; 
+    margin-left: auto;
+    border: 2px solid navy;
+}
+
+
+#voittotaulu1, #voittotaulu2 {
+    font-size: 24px; 
+}
+
+.arvo {
+    padding-left: 20px;
+}
+
+.slot-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.item2 {
+    width: 200px;
+}
+
+.item4 {
+    align-items: flex-end;
+}
+
+.item3 {
+    width: 140px;
+}
+
+.stats {
+    color: #ff69b4; 
+    font-weight: bold;
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.ruutu {
+    display: flex;
+    background-color: #e8e8e8; 
+    border: 1px solid #4d4d4d; 
+    height: 250px;
+    margin: 0;
+    justify-content: center;
+}
+
+.lukitse {
+    color: #ff69b4; 
+    background-color: #4d4d4d; 
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.lukitse:hover {
+    background-color: #ff69b4; 
+    color: #fff; 
+    transition: 0.7s;
+}
+
+.nappulat {
+    display: inline-flex;
+    height: 80px;
+}
+
+#pelaa, #panosNappi {
+    width: 100px; 
+    height: 100px; 
+    background-color: #ff69b4; 
+    border: 0; 
+    border-radius: 0; 
+    color: #fff; 
+    font-size: 30px;
+    font-weight: 600;
+    outline: 0;
+    text-align: auto;
+}
+
+#pelaa:hover, #panosNappi:hover {
+    background-color: #4d4d4d; 
+    color: #ff69b4; 
+}
+#raha, #panos {
+    font-size: 36px; 
+    font-weight: bold; 
+    padding: 5px 10px; 
+    background-color: #f06292; 
+    color: #fff; 
+    border-radius: 10px; 
+    margin: 5px; 
+}
+#voittoteksti {
+    visibility: hidden;
+    z-index: 1000; 
+    position: fixed; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FFFF00;
+    padding: 10px;
+    background-color: antiquewhite;
+    color: #000000;
+    font: 500% bolder;
+}
